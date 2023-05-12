@@ -1,0 +1,38 @@
+//baitap1
+myColor =["red","green","white","black"];
+console.log(myColor.join(','))
+//baitap2
+var num='025468'
+var str = num.toString()
+var result =[str[0]]
+for(var x=1;x<str.length;x++){
+  if(str[x-1]%2===0&&str[x]%2===0){
+    result.push('',str[x])
+  }else{
+    result.push(str[x])
+  }
+
+}
+//console.log(result.join('-'))
+//bai tap 3
+var str = 'tHE qUICK bROWN fOX'
+const UPPER = 'The Quick Brown Fox';
+const LOWER = 'THE QUICK BROWN FOX';
+const result = [];
+  
+  for(let x=0; x<str.length; x++)
+  {
+    if(UPPER.includes(str[x]))
+    {
+      result.push(str[x].toLowerCase());
+    }
+    else if(LOWER.includes(str[x]))
+    {
+      result.push(str[x].toUpperCase());
+    }
+    else 
+    {
+      result.push(str[x]);
+    }
+  }
+console.log(result.join(''));
